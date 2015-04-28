@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>gmaps_lite.js - example</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="gmaps_lite.js"></script>
+<style type="text/css">
+<!--
+.map-canvas {
+	margin: 10px;
+	height: 200px;
+	width: 600px;
+}
+-->
+</style>
+<script>
+$(function(){
+	gmaps_lite($("[data-address]"));
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="map-canvas" data-address="東京スカイツリー"></div>
+	<div class="map-canvas" data-address="35.667480, 139.727275"></div>
+	<div class="map-canvas" data-address="スターバックス 福岡市中央区大名2丁目4-22"></div>
+</div>
+</body>
+</html>
